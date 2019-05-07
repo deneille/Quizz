@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<title>TheQuizz</title>
+</head>   
+ 
+
+<body bgcolor="gold">
+
+<center> <h1> WELCOME TO THE QUIZZ ! </h1>  </center>
+
+
+<u>You are only allowed to use the following commands </u> 
+    
+<ul>
+<li> PLAY</li>
+<li> EXIT  </li> 
+<li> DROP </li>
+<li> REFRESH  </li>
+</ul>
+
+
+
+<center> <img src = "quizz.jpeg" > </center>
+
+
+<br>
+
+<center> 
+<form action="http://cs.mcgill.ca/~hgokse/cgi-bin/transporter.py" method="post" style=float:center; >
+		<input type=hidden name=inventory value=1,0>
+		<input type=hidden name=URL value=http://cs.mcgill.ca/~akouma1/cgi-bin/room.cgi>
+		<input type=submit value=North>
+</form>
+</center>
+
+<center>
+ <form action="cgi-bin/room.cgi" method="post" align="center">
+    <input align="center" style="width: 500px; height 200px ;" type="text" name="command" placeholder="Answer here">
+    <input type=hidden name=inventory value=1,0>
+    <input type=submit value= "Submit Answer" >
+ </form>
+
+</center>
+
+<form action="http://www.cs.mcgill.ca/~akouma1/cgi-bin/transporter.py"  method="get" style=float:left; >
+		<input type=hidden name=inventory value=1,0>
+		<input type=hidden name=URL value=http://cs.mcgill.ca/~akouma1/cgi-bin/room.cgi>
+		<input type=submit value=West>
+</form>
+
+<form action=http://cs.mcgill.ca/~yhe54/cgi-bin/transporter.py  method="get" style=float:right; >
+		<input type=hidden name=inventory value=1,0>
+		<input type=hidden name=URL value=http://cs.mcgill.ca/~akouma1/cgi-bin/room.cgi>
+		<input type=submit value=East>
+</form>
+
+<br>
+
+<center>
+<form action=http://cs.mcgill.ca/~dguise/cgi-bin/transporter.py  method="get" style=float:center; >
+		<input type=hidden name=inventory value=1,0>
+		<input type=hidden name=URL value=http://cs.mcgill.ca/~akouma1/cgi-bin/room.cgi>
+		<input type=submit value=South>
+</form>
+</center>
+
+<br>
+
+<center> 
+<textarea bgcolor="gold" rows="5" cols="50" >
+Output area
+</textarea>
+</center>
+
+</body>
+
+</html>
